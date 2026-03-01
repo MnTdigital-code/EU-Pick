@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>EU-Pick Tutors | EDU-Pick Tutors</title>
+
+<style>
+/* ---------- ROOT ---------- */
+:root {
+  --blue-main: #1e73be;
+  --blue-dark: #155a96;
+  --blue-light: #e6f1ff;
+  --shadow-soft: 0 10px 26px rgba(0,0,0,0.08);
+  --radius-lg: 18px;
+  --radius-xl: 26px;
+  --transition: all 0.3s ease;
+  font-family: "Segoe UI", Inter, system-ui, sans-serif;
+}
+
+/* ---------- GLOBAL ---------- */
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: linear-gradient(
+    180deg,
+    #e6f1ff 0%,
+    #f4f9ff 35%,
+    #ffffff 100%
+  );
+  background-attachment: fixed;
+  color: #1a1a1a;
+  line-height: 1.7;
+}
+
+a { text-decoration: none; }
+
+/* ---------- HEADER ---------- */
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: white;
+  box-shadow: var(--shadow-soft);
+  z-index: 1000;
+}
+
+.nav {
+  max-width: 1200px;
+  margin: auto;
+  padding: 12px 22px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logos {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+}
+
+.logos img {
+  height: 40px;
+}
+
+/* ✅ SMALLER, BETTER-FITTING BUTTONS */
+.nav-buttons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.nav-buttons a {
+  padding: 8px 14px;
+  border-radius: 999px;
+  background: var(--blue-main);
+  color: white;
+  font-weight: 600;
+  font-size: 0.9rem;
+  white-space: nowrap;
+  transition: var(--transition);
+}
+
+.nav-buttons a:hover {
+  background: var(--blue-dark);
+  transform: translateY(-1px);
+}
+
+/* ---------- MAIN ---------- */
+main {
+  padding-top: 110px;
+}
+
+/* ✅ TRANSPARENT SECTIONS SO GRADIENT FLOWS */
+section {
+  background: rgba(255,255,255,0.88);
+  backdrop-filter: blur(2px);
+  border-radius: var(--radius-xl);
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 48px 30px;
+  box-shadow: var(--shadow-soft);
+  animation: fadeUp 0.6s ease;
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(14px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* ---------- HERO ---------- */
+.hero {
+  text-align: center;
+  background: rgba(255,255,255,0.9);
+}
+
+.hero h1 {
+  font-size: clamp(2.4rem, 5vw, 3.6rem);
+  color: var(--blue-main);
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.15rem;
+  max-width: 750px;
+  margin: auto;
+}
+
+/* ---------- HEADINGS ---------- */
+h2 {
+  color: var(--blue-main);
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+h3 {
+  margin-top: 36px;
+  color: var(--blue-dark);
+}
+
+/* ---------- PRICING ---------- */
+.pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 22px;
+  margin-top: 25px;
+}
+
+.price-box {
+  background: white;
+  padding: 22px;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-soft);
+  transition: var(--transition);
+}
+
+.price-box:hover {
+  transform: translateY(-5px);
+}
+
+.price-box strong {
+  display: block;
+  font-size: 1.05rem;
+  margin-bottom: 8px;
+}
+
+.cta-large {
+  margin-top: 35px;
+  text-align: center;
+}
+
+.cta-large a {
+  padding: 15px 28px;
+  font-size: 1.05rem;
+  border-radius: 999px;
+  background: var(--blue-main);
+  color: white;
+  font-weight: 700;
+  transition: var(--transition);
+}
+
+.cta-large a:hover {
+  background: var(--blue-dark);
+}
+
+/* ---------- CONTACT ---------- */
+.contact-box {
+  text-align: center;
+}
+
+/* ---------- FOOTER ---------- */
+footer {
+  background: var(--blue-main);
+  color: white;
+  padding: 50px 20px;
+}
+
+.footer-inner {
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  gap: 14px;
+}
+
+footer strong {
+  font-size: 1.2rem;
+}
+
+/* ---------- MOBILE ---------- */
+@media (max-width: 768px) {
+  .nav {
+    padding: 12px 16px;
+  }
+
+  .nav-buttons a {
+    padding: 7px 12px;
+    font-size: 0.85rem;
+  }
+
+  section {
+    padding: 34px 20px;
+    margin: 28px 14px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="nav">
+    <div class="logos">
+      <img src="eu-pick-logo.png" alt="EU-Pick Tutors">
+      <img src="edu-pick-logo.png" alt="EDU-Pick Tutors">
+    </div>
+    <div class="nav-buttons">
+      <a href="https://wa.me/26776181918">Contact Us</a>
+      <a href="https://wa.me/26776181918">Register Now</a>
+    </div>
+  </div>
+</header>
+
+<main>
+
+<section class="hero">
+  <h1>RESULTS DRIVEN<br>ACADEMIC EXCELLENCE</h1>
+  <p>Transform your academic journey with expert tutoring that combines personalized attention with proven teaching methodologies. Join 500+ successful students who achieved their academic goals.</p>
+</section>
+
+<section>
+  <h2>About Us</h2>
+  <p><strong>Picking you from where you are to where you should be.</strong></p>
+  <p>EU Pick Tutoring Center is a structured academic institution designed to move students forward with clarity, discipline, and purpose. We provide guided education pathways at JCE level and BGCSE level, meeting learners exactly where they are and equipping them with the foundation, confidence, and direction required for measurable academic progress.</p>
+  <p>Through our more advanced EDU-Pick pathway, we extend beyond the basics to support students ready for higher academic demands. Our approach is focused, outcomes-driven, and personalized by level, ensuring every learner is picked from their current position and guided toward where they should be academically and professionally.</p>
+</section>
+
+<section>
+  <h2>EU-Pick Tutors Pricing — JCE Level (Per Month)</h2>
+  <div class="pricing-grid">
+    <div class="price-box"><strong>Science</strong>P250</div>
+    <div class="price-box"><strong>Math</strong>P200</div>
+    <div class="price-box"><strong>English</strong>P200</div>
+    <div class="price-box"><strong>Setswana</strong>P200</div>
+    <div class="price-box"><strong>Accounting</strong>P250</div>
+    <div class="price-box"><strong>Math + Science + English + Free Setswana</strong>P500</div>
+    <div class="price-box"><strong>Four Core + Three Additional Subjects</strong>P1,200</div>
+  </div>
+  <div class="cta-large">
+    <a href="https://wa.me/26776181918">Enroll Now on WhatsApp</a>
+  </div>
+</section>
+
+<section>
+  <h2>EU-Pick Tutors Pricing — BGCSE Level (Per Month)</h2>
+  <div class="pricing-grid">
+    <div class="price-box"><strong>Best 6 Subjects</strong>P750</div>
+    <div class="price-box"><strong>Math + Science</strong>P500</div>
+    <div class="price-box"><strong>Math + English</strong>P400</div>
+    <div class="price-box"><strong>Math + Science + English</strong>P600</div>
+    <div class="price-box"><strong>Math</strong>P250</div>
+    <div class="price-box"><strong>English</strong>P150</div>
+    <div class="price-box"><strong>Setswana</strong>P200</div>
+    <div class="price-box"><strong>Accounting</strong>P200</div>
+    <div class="price-box"><strong>Commerce</strong>P200</div>
+  </div>
+  <div class="cta-large">
+    <a href="https://wa.me/26776181918">Enroll Now on WhatsApp</a>
+  </div>
+</section>
+
+<section>
+  <h2>EDU-Pick Professional Programs</h2>
+  <div class="pricing-grid">
+    <div class="price-box"><strong>Receptionist Training</strong>P2,500 – 8 weeks</div>
+    <div class="price-box"><strong>Stock Management & Control</strong>P3,000 – 8 weeks</div>
+    <div class="price-box"><strong>Effective Communication & Customer Service</strong>P1,500 – 4 weeks</div>
+    <div class="price-box"><strong>Business Compliance & Loss Prevention</strong>P1,500 – 3 weeks</div>
+    <div class="price-box"><strong>Entrepreneurship</strong>P1,500 – 3 weeks</div>
+    <div class="price-box"><strong>Basic Computer Skills</strong>P2,500 – 5 weeks</div>
+    <div class="price-box"><strong>Professional Tutoring & Classroom Management</strong>P4,000 – 6 months</div>
+    <div class="price-box"><strong>Inclusive Education & Special Needs Support</strong>P2,500 – 3 months</div>
+    <div class="price-box"><strong>Facilitation & Learning Support</strong>P1,500 – 4 weeks</div>
+    <div class="price-box"><strong>Professionalism & Work Code of Conduct</strong>P1,500 – 2 weeks</div>
+  </div>
+</section>
+
+<section class="contact-box">
+  <h2>Get in Touch</h2>
+  <p>Plot 11,781, Block 8, Francistown</p>
+  <div class="cta-large">
+    <a href="https://wa.me/26776181918">Chat on WhatsApp</a>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="footer-inner">
+    <strong>EU-Pick Tutors</strong>
+    <span>Picking you from where you are to where you should be.</span>
+    <span>Plot 11,781, Block 8, Francistown</span>
+    <span>Contact: +267 76181918</span>
+    <span>Powered by M&T Digital Marketing</span>
+  </div>
+</footer>
+
+</body>
+</html>
